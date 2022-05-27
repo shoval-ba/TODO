@@ -1,0 +1,184 @@
+$font-famaly: Helvetica, sans-serif;
+$primary-color: #333;
+$text-color: white;
+
+%input{
+  position: absolute;
+  width: 300px;
+  height: 40px;
+  outline: none;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid rgb(194, 71, 71);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+%button{
+  position: absolute;
+  appearance: none;
+  background-color: #FFFFFF;
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: #ADCFFF 0 -12px 6px inset;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,sans-serif;
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin: 0;
+  outline: none;
+  padding: 10px;
+  padding: 1rem 1.3rem;
+  quotes: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+%button:hover {
+  background-color: #FFC229;
+  box-shadow: #FF6314 0 -6px 8px inset;
+  transform: scale(1.125);
+}
+
+%button:active {
+  transform: scale(1.025);
+}
+
+@media (min-width: 700px) {
+  %button {
+    font-size: 20px;
+    padding: .50rem 1rem;
+  } 
+}
+
+%box{
+  position: absolute;
+  background-color: rgba(210, 180, 140, 0.87);
+  border-radius: 10px;
+  display: inline-block;
+  margin-left: 22%;
+  margin-top: 5%;
+  width: 360px;
+  height: 40px;
+}
+
+%trash{
+    position: absolute;
+    width: 30px;
+    height: fit-content;
+}
+
+
+
+html{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  body {
+    font-family: $font-famaly;
+    color: $text-color;
+    background: $primary-color;
+      .h1{
+        position: absolute;
+        top:5%;
+        left:42%;
+        color: #b99e5f;
+        font-size: 69px;
+      }
+      #TODO-icon{
+        position: absolute;
+        top:9%;
+        left:64%;
+        width: 90px;
+        height: 100px;
+      }
+      #input-text {
+        @extend %input;  
+        top:21%;
+        left:40%;
+      }
+      .button-1 {
+        @extend %button;
+        top:21.7%;
+        left:57%;
+      }
+      #box{
+        @extend %box;
+        top:19%;
+        left:18%;
+        .trash{
+          @extend %trash;
+          top:13%;
+          left:90%;
+        }
+        .task{
+          position: absolute;
+          top:-8%;
+          left:8%;
+          font-family: $font-famaly;
+        }
+        .task-icon{
+          position: absolute;
+          top:18%;
+          left:84%;
+        }
+        #checkbox{
+          position: absolute;
+          top:29%;
+          left:1.5%;
+        }
+      }  
+      .box-2{
+        @extend %box;
+        top:30%;
+        left:18%;
+        .trash-2{
+          @extend %trash;
+          top:13%;
+          left:90%;
+        }
+      }  
+  }
+}
+
+
+
+
+// .input-2 {
+    //   @extend %input;
+    //   top:28%;
+    //   left:40%;
+    // }
+    // .button-2 {
+    //   @extend %button;
+    //   top:27.5%;
+    //   left:57%;
+    // }
+    // .input-3 {
+    //   @extend %input;
+    //   top:35%;
+    //   left:40%;
+    // }
+    // .button-3 {
+    //   @extend %button;
+    //   top:34.5%;
+    //   left:57%;
+    // }
+    // .input-4 {
+    //   @extend %input;
+    //   top:42%;
+    //   left:40%;
+    // }
+    // .button-4 {
+    //   @extend %button;
+    //   top:41.5%;
+    //   left:57%;
+    // }
