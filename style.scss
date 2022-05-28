@@ -100,6 +100,13 @@ html{
         width: 90px;
         height: 100px;
       }
+      ul{
+        margin: 0;
+        padding: 0;
+        position:absolute;
+        top: 26%;
+        left: 35.5%;
+      }
       #input-text {
         @extend %input;  
         top:21%;
@@ -112,8 +119,9 @@ html{
       }
       #box{
         @extend %box;
-        top:19%;
-        left:18%;
+        position: relative;
+        display: block;
+        flex-wrap: wrap;
         .trash{
           @extend %trash;
           top:13%;
