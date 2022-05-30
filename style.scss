@@ -64,8 +64,8 @@ $text-color: white;
   background-color: rgba(210, 180, 140, 0.87);
   border-radius: 10px;
   display: inline-block;
-  margin-left: 22%;
-  margin-top: 5%;
+  margin-left: -33%;
+  margin-top: 9%;
   width: 360px;
   height: 40px;
 }
@@ -79,29 +79,39 @@ $text-color: white;
 
 
 html{
-  position: relative;
   width: 100%;
   height: 100%;
   body {
+    position: relative;
     font-family: $font-famaly;
     color: $text-color;
-    background: $primary-color;
+    background: aliceblue;
+    .background{
+      position: relative;
+      background-color: #ADCFFF;
+      width: 500px;
+      height: 800px;
+      margin:0 auto;
+      text-align: center;
       .h1{
-        position: absolute;
-        top:5%;
-        left:42%;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        min-height: 150px;
         color: #b99e5f;
         font-size: 69px;
+        vertical-align: middle;
       }
       #TODO-icon{
         position: absolute;
-        top:9%;
-        left:64%;
+        top:4%;
+        left:76%;
         width: 90px;
         height: 100px;
       }
       ul{
-        margin: 0;
+        // margin: 0;
+        margin-bottom: 10px;
         padding: 0;
         position:absolute;
         top: 26%;
@@ -110,12 +120,12 @@ html{
       #input-text {
         @extend %input;  
         top:21%;
-        left:40%;
+        left:12%;
       }
       .button-1 {
         @extend %button;
-        top:21.7%;
-        left:57%;
+        top:22.2%;
+        left:77%;
       }
       #box{
         @extend %box;
@@ -154,39 +164,7 @@ html{
           left:90%;
         }
       }  
+    }
   }
 }
 
-
-
-
-// .input-2 {
-    //   @extend %input;
-    //   top:28%;
-    //   left:40%;
-    // }
-    // .button-2 {
-    //   @extend %button;
-    //   top:27.5%;
-    //   left:57%;
-    // }
-    // .input-3 {
-    //   @extend %input;
-    //   top:35%;
-    //   left:40%;
-    // }
-    // .button-3 {
-    //   @extend %button;
-    //   top:34.5%;
-    //   left:57%;
-    // }
-    // .input-4 {
-    //   @extend %input;
-    //   top:42%;
-    //   left:40%;
-    // }
-    // .button-4 {
-    //   @extend %button;
-    //   top:41.5%;
-    //   left:57%;
-    // }

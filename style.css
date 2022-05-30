@@ -1,4 +1,4 @@
-html body #input-text {
+html body .background #input-text {
   position: absolute;
   width: 300px;
   height: 40px;
@@ -12,7 +12,7 @@ html body #input-text {
           box-sizing: border-box;
 }
 
-html body .button-1 {
+html body .background .button-1 {
   position: absolute;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -47,7 +47,7 @@ html body .button-1 {
       touch-action: manipulation;
 }
 
-html body .button-1:hover {
+html body .background .button-1:hover {
   background-color: #FFC229;
   -webkit-box-shadow: #FF6314 0 -6px 8px inset;
           box-shadow: #FF6314 0 -6px 8px inset;
@@ -55,30 +55,30 @@ html body .button-1:hover {
           transform: scale(1.125);
 }
 
-html body .button-1:active {
+html body .background .button-1:active {
   -webkit-transform: scale(1.025);
           transform: scale(1.025);
 }
 
 @media (min-width: 700px) {
-  html body .button-1 {
+  html body .background .button-1 {
     font-size: 20px;
     padding: .50rem 1rem;
   }
 }
 
-html body #box, html body .box-2 {
+html body .background #box, html body .background .box-2 {
   position: absolute;
   background-color: rgba(210, 180, 140, 0.87);
   border-radius: 10px;
   display: inline-block;
-  margin-left: 22%;
-  margin-top: 5%;
+  margin-left: -33%;
+  margin-top: 9%;
   width: 360px;
   height: 40px;
 }
 
-html body #box .trash, html body .box-2 .trash-2 {
+html body .background #box .trash, html body .background .box-2 .trash-2 {
   position: absolute;
   width: 30px;
   height: -webkit-fit-content;
@@ -87,88 +87,105 @@ html body #box .trash, html body .box-2 .trash-2 {
 }
 
 html {
-  position: relative;
   width: 100%;
   height: 100%;
 }
 
 html body {
+  position: relative;
   font-family: Helvetica, sans-serif;
   color: white;
-  background: #333;
+  background: aliceblue;
 }
 
-html body .h1 {
-  position: absolute;
-  top: 5%;
-  left: 42%;
+html body .background {
+  position: relative;
+  background-color: #ADCFFF;
+  width: 500px;
+  height: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+html body .background .h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 150px;
   color: #b99e5f;
   font-size: 69px;
+  vertical-align: middle;
 }
 
-html body #TODO-icon {
+html body .background #TODO-icon {
   position: absolute;
-  top: 9%;
-  left: 64%;
+  top: 4%;
+  left: 76%;
   width: 90px;
   height: 100px;
 }
 
-html body ul {
-  margin: 0;
+html body .background ul {
+  margin-bottom: 10px;
   padding: 0;
   position: absolute;
   top: 26%;
   left: 35.5%;
 }
 
-html body #input-text {
+html body .background #input-text {
   top: 21%;
-  left: 40%;
+  left: 12%;
 }
 
-html body .button-1 {
-  top: 21.7%;
-  left: 57%;
+html body .background .button-1 {
+  top: 22.2%;
+  left: 77%;
 }
 
-html body #box {
+html body .background #box {
   position: relative;
   display: block;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
-html body #box .trash {
+html body .background #box .trash {
   top: 13%;
   left: 90%;
 }
 
-html body #box .task {
+html body .background #box .task {
   position: absolute;
   top: -8%;
   left: 8%;
   font-family: Helvetica, sans-serif;
 }
 
-html body #box .task-icon {
+html body .background #box .task-icon {
   position: absolute;
   top: 18%;
   left: 84%;
 }
 
-html body #box #checkbox {
+html body .background #box #checkbox {
   position: absolute;
   top: 29%;
   left: 1.5%;
 }
 
-html body .box-2 {
+html body .background .box-2 {
   top: 30%;
   left: 18%;
 }
 
-html body .box-2 .trash-2 {
+html body .background .box-2 .trash-2 {
   top: 13%;
   left: 90%;
 }
